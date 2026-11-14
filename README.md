@@ -15,7 +15,7 @@ Ask in plain language: it validates the request, checks your role, and acts.
 ![Groq](https://img.shields.io/badge/Groq-gpt--oss--120b-2F5D50?style=flat-square)
 ![FastMCP](https://img.shields.io/badge/MCP-FastMCP-B0703C?style=flat-square)
 ![Pydantic](https://img.shields.io/badge/Pydantic-v2-B0703C?style=flat-square&logo=pydantic&logoColor=white)
-[![CI](https://img.shields.io/github/actions/workflow/status/Kaushik-verse/-hr-assistant/ci.yml?branch=main&style=flat-square&label=CI&color=2F5D50)](https://github.com/Kaushik-verse/-hr-assistant/actions/workflows/ci.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/Kaushik-verse/vidura-agentic-hr-assistant/ci.yml?branch=main&style=flat-square&label=CI&color=2F5D50)](https://github.com/Kaushik-verse/vidura-agentic-hr-assistant/actions/workflows/ci.yml)
 ![License](https://img.shields.io/badge/license-all%20rights%20reserved-5B605D?style=flat-square)
 
 [Features](#-what-it-does) · [Screenshots](#-screenshots) · [Architecture](#-architecture) · [Run it](#-run-it-locally) · [MCP](#-use-it-from-any-mcp-client) · [Tests](#-quality)
@@ -110,8 +110,8 @@ Every name is drawn from Indian mythology:
 Requires Python 3.11+ and a free [Groq API key](https://console.groq.com/keys). [uv](https://docs.astral.sh/uv/) is recommended.
 
 ```bash
-git clone https://github.com/Kaushik-verse/-hr-assistant.git
-cd -hr-assistant
+git clone https://github.com/Kaushik-verse/vidura-agentic-hr-assistant.git
+cd vidura-agentic-hr-assistant
 cp .env.example .env          # add GROQ_API_KEY
 uv sync
 uv run streamlit run app.py
@@ -165,7 +165,7 @@ HR_MCP_USER="Chitra Gupta" HR_MCP_ROLE="HR Admin" uv run hr-mcp
   "mcpServers": {
     "vidura": {
       "command": "uv",
-      "args": ["--directory", "/path/to/-hr-assistant", "run", "hr-mcp"],
+      "args": ["--directory", "/path/to/vidura-agentic-hr-assistant", "run", "hr-mcp"],
       "env": { "HR_MCP_USER": "Aditi Sharma", "HR_MCP_ROLE": "Employee" }
     }
   }
@@ -204,5 +204,7 @@ locally to evaluate the work.
 
 <div align="center">
 <br/>
+If Vidura is useful or interesting, a ⭐ helps more people find it.
+
 <sub>Built by <b>Ch Sai Kaushik</b> · B.Tech CSE (Data Science), VIT Vellore · <a href="https://github.com/Kaushik-verse">@Kaushik-verse</a></sub>
 </div>

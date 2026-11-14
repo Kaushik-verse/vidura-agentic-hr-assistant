@@ -1,5 +1,5 @@
 [project]
-name = "hr-assistant"
+name = "vidura-agentic-hr-assistant"
 version = "1.0.0"
 description = "Vidura: HR operations app with a tool-calling AI assistant, role-based access control and an MCP server."
 readme = "README.md"
