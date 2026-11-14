@@ -15,7 +15,7 @@ Ask in plain language: it validates the request, checks your role, and acts.
 ![Groq](https://img.shields.io/badge/Groq-gpt--oss--120b-2F5D50?style=flat-square)
 ![FastMCP](https://img.shields.io/badge/MCP-FastMCP-B0703C?style=flat-square)
 ![Pydantic](https://img.shields.io/badge/Pydantic-v2-B0703C?style=flat-square&logo=pydantic&logoColor=white)
-![Tests](https://img.shields.io/badge/tests-36%20passing-2F5D50?style=flat-square)
+[![CI](https://img.shields.io/github/actions/workflow/status/Kaushik-verse/-hr-assistant/ci.yml?branch=main&style=flat-square&label=CI&color=2F5D50)](https://github.com/Kaushik-verse/-hr-assistant/actions/workflows/ci.yml)
 ![License](https://img.shields.io/badge/license-all%20rights%20reserved-5B605D?style=flat-square)
 
 [Features](#-what-it-does) · [Screenshots](#-screenshots) · [Architecture](#-architecture) · [Run it](#-run-it-locally) · [MCP](#-use-it-from-any-mcp-client) · [Tests](#-quality)
@@ -184,6 +184,8 @@ uv run ruff format .    # format
 - **Agent:** a scripted chat model drives the real agent loop, including a prompt-injection attempt to call an admin tool
 - **MCP:** in-memory FastMCP client against the real server
 - **UI:** Streamlit `AppTest` renders both roles and approves a leave request
+
+GitHub Actions runs lint, format checks and the full test suite on Python 3.11 and 3.13 for every push and pull request.
 
 <details>
 <summary><b>Known limits</b></summary>
