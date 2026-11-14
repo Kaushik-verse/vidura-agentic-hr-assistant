@@ -4,7 +4,7 @@
 
 <br/>
 
-**Vidura** (विदुर) is an agentic HR assistant named after the wise counsellor of the Mahabharata.<br/>
+**Vidura** is an agentic HR assistant named after the wise counsellor of the Mahabharata.<br/>
 Ask in plain language: it validates the request, checks your role, and acts.
 
 <br/>
