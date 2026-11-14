@@ -1,0 +1,85 @@
+:root {
+  --ink: #1B1D1C;
+  --muted: #5B605D;
+  --line: #E0DED6;
+  --surface: #FFFFFF;
+  --accent: #2F5D50;
+  --accent-soft: #E3ECE8;
+  --warn: #9A4426;
+  --warn-soft: #F6E7DF;
+}
+
+/* Layout rhythm */
+.block-container { padding-top: 2rem; padding-bottom: 4rem; max-width: 1240px; }
+
+/* Header */
+.page-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 1rem;
+  padding-bottom: 1.25rem; margin-bottom: .25rem; border-bottom: 1px solid var(--line); }
+.page-head h1 { font-size: clamp(1.6rem, 3.2vw, 2.25rem); line-height: 1.15; margin: 0; padding: 0;
+  font-weight: 500; letter-spacing: -0.01em; }
+.eyebrow { margin: 0 0 .35rem; font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.role-chip { flex-shrink: 0; font-size: .8rem; font-weight: 600; color: var(--accent); background: var(--accent-soft);
+  padding: .3rem .7rem; border-radius: 999px; }
+
+/* Sidebar */
+.brand { font-family: "Fraunces", serif; font-size: 1.6rem; font-weight: 600; color: var(--ink);
+  display: flex; align-items: center; gap: .5rem; letter-spacing: -0.01em; }
+.brand-mark { width: 30px; height: 30px; flex-shrink: 0; }
+.label { font-size: .75rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted);
+  margin: .75rem 0 .35rem; }
+.status { font-size: .875rem; font-weight: 500; margin: 0; display: flex; align-items: center; gap: .5rem; }
+.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.dot.ok { background: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.dot.off { background: var(--warn); box-shadow: 0 0 0 3px var(--warn-soft); }
+.status-model { font-size: .8rem; color: var(--muted); margin: .15rem 0 0 1rem; }
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] { gap: 1.5rem; border-bottom: 1px solid var(--line); overflow-x: auto; scrollbar-width: none; }
+.stTabs [data-baseweb="tab"] { padding: .9rem 0 .7rem; font-weight: 500; color: var(--muted); white-space: nowrap; }
+.stTabs [aria-selected="true"] { color: var(--ink); }
+.stTabs [data-baseweb="tab-highlight"] { background-color: var(--accent); height: 2px; }
+.stTabs [data-baseweb="tab-panel"] { padding-top: 1.25rem; }
+
+/* Section headings */
+.section { margin: 1.25rem 0 .6rem; }
+.section h3 { font-family: "Instrument Sans", sans-serif; font-size: 1rem; font-weight: 600; margin: 0; padding: 0; }
+.section p { margin: .15rem 0 0; font-size: .875rem; color: var(--muted); }
+
+/* Metrics */
+[data-testid="stMetric"] { background: var(--surface); padding: 1rem 1.1rem; }
+[data-testid="stMetricLabel"] p { font-size: .8rem; color: var(--muted); font-weight: 500; }
+[data-testid="stMetricValue"] { font-family: "Fraunces", serif; font-size: 1.9rem; font-weight: 500; }
+
+/* Cards */
+[data-testid="stVerticalBlockBorderWrapper"], [data-testid="stForm"] { background: var(--surface); }
+.chart-title { font-size: .85rem; font-weight: 600; margin: 0 0 .25rem; }
+
+/* Empty states */
+.empty { border: 1px dashed var(--line); border-radius: 8px; padding: 1.1rem; text-align: center;
+  color: var(--muted); font-size: .9rem; background: rgba(255,255,255,.5); }
+
+/* People list */
+.people { list-style: none; padding: 0; margin: 0; }
+.people li { display: flex; flex-direction: column; padding: .7rem .9rem; border: 1px solid var(--line);
+  border-radius: 8px; background: var(--surface); margin-bottom: .5rem; }
+.people span { font-size: .85rem; color: var(--muted); }
+
+/* Chat */
+.chat-intro { padding: .25rem 0 .75rem; }
+.chat-intro h3 { font-size: 1.25rem; margin: 0; padding: 0; font-weight: 500; }
+.chat-intro p { color: var(--muted); margin: .25rem 0 0; max-width: 42rem; }
+[data-testid="stChatMessage"] { background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+  padding: .9rem 1rem; }
+[data-testid="stChatMessageAvatarCustom"], [data-testid="stChatMessageAvatarUser"] { background: var(--accent-soft); color: var(--accent); }
+
+/* Focus visibility for keyboard users */
+button:focus-visible, [role="tab"]:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--accent) !important; outline-offset: 2px; }
+
+/* Phones */
+@media (max-width: 640px) {
+  .block-container { padding: 3.5rem 1rem 3rem; }
+  .page-head { align-items: flex-start; }
+  [data-testid="stMetric"] { padding: .6rem .8rem; }
+  [data-testid="stMetricValue"] { font-size: 1.5rem; }
+}

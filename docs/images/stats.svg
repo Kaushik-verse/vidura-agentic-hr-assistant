@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 170" width="1280" height="170" role="img" aria-labelledby="t">
+  <title id="t">At a glance: 19 tools, 3 interfaces, 2 roles, 6 HR modules, 36 tests</title>
+  <rect width="1280" height="170" rx="22" fill="#2F5D50"/>
+  <g font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" text-anchor="middle">
+    <g font-family="Georgia,serif" font-size="52" fill="#FFF">
+      <text x="140" y="92">19</text><text x="390" y="92">3</text><text x="640" y="92">2</text><text x="890" y="92">6</text><text x="1140" y="92">36</text>
+    </g>
+    <g font-size="15" fill="#CFE2DA" font-weight="600">
+      <text x="140" y="126">agent &amp; MCP tools</text><text x="390" y="126">interfaces: UI · chat · MCP</text>
+      <text x="640" y="126">roles, enforced in code</text><text x="890" y="126">HR modules</text><text x="1140" y="126">automated tests</text>
+    </g>
+    <g stroke="#FFF" stroke-opacity=".18"><path d="M265 40V130M515 40V130M765 40V130M1015 40V130"/></g>
+  </g>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 560" width="1280" height="560" role="img" aria-labelledby="t d">
+  <title id="t">Architecture</title>
+  <desc id="d">Three front doors (Streamlit UI, chat agent, MCP server) share one service layer that enforces RBAC, validation and audit, backed by SQLite.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8B908C"/></marker>
+  </defs>
+  <rect width="1280" height="560" rx="22" fill="#F6F5F1"/>
+  <g font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+    <text x="64" y="64" font-size="13" font-weight="700" fill="#8A4F22" letter-spacing="1.6">ARCHITECTURE</text>
+    <text x="64" y="98" font-family="Georgia,serif" font-size="30" fill="#1B1D1C">Three front doors, one source of truth</text>
+
+    <!-- Actors -->
+    <g font-size="14" fill="#5B605D">
+      <text x="64" y="160" font-weight="700" fill="#1B1D1C">Employee / HR Admin</text>
+      <text x="64" y="180">browser</text>
+      <text x="64" y="300" font-weight="700" fill="#1B1D1C">Plain language</text>
+      <text x="64" y="320">"approve Lakshmi's leave"</text>
+      <text x="64" y="440" font-weight="700" fill="#1B1D1C">MCP clients</text>
+      <text x="64" y="460">Claude Desktop, IDEs</text>
+    </g>
+
+    <!-- Entry layer -->
+    <g>
+      <rect x="290" y="130" width="250" height="76" rx="12" fill="#FFF" stroke="#E0DED6"/>
+      <text x="312" y="162" font-size="17" font-weight="700" fill="#1B1D1C">Streamlit UI</text>
+      <text x="312" y="186" font-size="13.5" fill="#5B605D">dashboards · forms · approvals</text>
+
+      <rect x="290" y="252" width="250" height="96" rx="12" fill="#FFF" stroke="#E0DED6"/>
+      <text x="312" y="284" font-size="17" font-weight="700" fill="#1B1D1C">Chat agent</text>
+      <text x="312" y="308" font-size="13.5" fill="#5B605D">LangChain create_agent</text>
+      <text x="312" y="328" font-size="13.5" fill="#5B605D">Groq · gpt-oss-120b</text>
+
+      <rect x="290" y="404" width="250" height="76" rx="12" fill="#FFF" stroke="#E0DED6"/>
+      <text x="312" y="436" font-size="17" font-weight="700" fill="#1B1D1C">FastMCP server</text>
+      <text x="312" y="460" font-size="13.5" fill="#5B605D">19 tools over stdio</text>
+    </g>
+    <g stroke="#8B908C" stroke-width="1.6" fill="none" marker-end="url(#a)">
+      <path d="M232 168H284"/><path d="M232 300H284"/><path d="M232 442H284"/>
+    </g>
+
+    <!-- Tools bound to user -->
+    <rect x="600" y="252" width="190" height="96" rx="12" fill="#FFF" stroke="#2F5D50" stroke-dasharray="5 4"/>
+    <text x="620" y="284" font-size="16" font-weight="700" fill="#2F5D50">Tools bound to</text>
+    <text x="620" y="306" font-size="16" font-weight="700" fill="#2F5D50">the signed-in user</text>
+    <text x="620" y="330" font-size="13" fill="#5B605D">admin tools hidden</text>
+
+    <g stroke="#8B908C" stroke-width="1.6" fill="none" marker-end="url(#a)">
+      <path d="M540 300H594"/>
+      <path d="M540 168C700 168 760 168 846 200"/>
+      <path d="M790 300H846"/>
+      <path d="M540 442C700 442 760 442 846 400"/>
+    </g>
+
+    <!-- Service core -->
+    <rect x="852" y="150" width="236" height="300" rx="16" fill="#2F5D50"/>
+    <text x="874" y="188" font-size="12" font-weight="700" fill="#BFD6CD" letter-spacing="1.4">SERVICE LAYER</text>
+    <text x="874" y="218" font-family="Georgia,serif" font-size="22" fill="#FFF">services.py</text>
+    <g font-size="14.5" fill="#F1F6F3">
+      <rect x="874" y="238" width="192" height="38" rx="8" fill="#FFF" fill-opacity=".1"/>
+      <text x="890" y="262">Role-based access</text>
+      <rect x="874" y="284" width="192" height="38" rx="8" fill="#FFF" fill-opacity=".1"/>
+      <text x="890" y="308">Pydantic validation</text>
+      <rect x="874" y="330" width="192" height="38" rx="8" fill="#FFF" fill-opacity=".1"/>
+      <text x="890" y="354">Business rules</text>
+      <rect x="874" y="376" width="192" height="38" rx="8" fill="#FFF" fill-opacity=".1"/>
+      <text x="890" y="400">Audit log</text>
+    </g>
+
+    <!-- DB -->
+    <g stroke="#8B908C" stroke-width="1.6" fill="none" marker-end="url(#a)"><path d="M1088 300H1130"/></g>
+    <g transform="translate(1136 240)">
+      <ellipse cx="44" cy="12" rx="44" ry="12" fill="#FFF" stroke="#B0703C" stroke-width="1.6"/>
+      <path d="M0 12v96c0 6.6 19.7 12 44 12s44-5.4 44-12V12" fill="#FFF" stroke="#B0703C" stroke-width="1.6"/>
+      <path d="M0 44c0 6.6 19.7 12 44 12s44-5.4 44-12M0 76c0 6.6 19.7 12 44 12s44-5.4 44-12" fill="none" stroke="#B0703C" stroke-width="1.2" opacity=".6"/>
+      <text x="44" y="150" text-anchor="middle" font-size="15" font-weight="700" fill="#1B1D1C">SQLite</text>
+      <text x="44" y="170" text-anchor="middle" font-size="12.5" fill="#5B605D">6 tables, FKs</text>
+    </g>
+
+    <text x="64" y="528" font-size="14" fill="#5B605D">Permissions live in code, not in the prompt, so a jailbroken model still can't approve leave for an employee session.</text>
+  </g>
+</svg>

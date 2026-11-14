@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 520" width="1280" height="520" role="img" aria-labelledby="t d">
+  <title id="t">Who can do what</title>
+  <desc id="d">Permission matrix for Employee and HR Admin roles.</desc>
+  <defs>
+    <g id="y"><circle r="11" fill="#E3ECE8"/><path d="M-5 0l3.5 3.5 6.5-7" stroke="#2F5D50" stroke-width="2.2" fill="none" stroke-linecap="round"/></g>
+    <g id="o"><rect x="-22" y="-11" width="44" height="22" rx="11" fill="#FBF3EC" stroke="#EBCFB8"/><text y="4.5" text-anchor="middle" font-size="11" font-weight="800" fill="#8A4F22" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">OWN</text></g>
+    <g id="n"><circle r="11" fill="#F0EFEB"/><path d="M-4 -4l8 8M4 -4l-8 8" stroke="#A3A7A4" stroke-width="2" stroke-linecap="round"/></g>
+  </defs>
+  <rect width="1280" height="520" rx="22" fill="#F6F5F1"/>
+  <g font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+    <text x="64" y="62" font-size="13" font-weight="700" fill="#8A4F22" letter-spacing="1.6">ROLE-BASED ACCESS</text>
+    <text x="64" y="96" font-family="Georgia,serif" font-size="30" fill="#1B1D1C">Who can do what</text>
+    <text x="64" y="124" font-size="15" fill="#5B605D">Enforced in the service layer for the UI, the agent and MCP alike.</text>
+
+    <rect x="64" y="150" width="1152" height="320" rx="14" fill="#FFF" stroke="#E0DED6"/>
+    <g font-size="13" font-weight="700" fill="#5B605D" letter-spacing=".6">
+      <text x="96" y="186">CAPABILITY</text><text x="470" y="186" text-anchor="middle">EMPLOYEE</text><text x="590" y="186" text-anchor="middle">HR ADMIN</text>
+      <text x="676" y="186">CAPABILITY</text><text x="1050" y="186" text-anchor="middle">EMPLOYEE</text><text x="1170" y="186" text-anchor="middle">HR ADMIN</text>
+    </g>
+    <path d="M64 202H1216M640 150V470" stroke="#E0DED6"/>
+    <g font-size="15" fill="#1B1D1C">
+      <text x="96" y="241">Request &amp; cancel leave</text><use href="#o" x="470" y="236"/><use href="#y" x="590" y="236"/>
+      <text x="96" y="285">Leave balance &amp; history</text><use href="#o" x="470" y="280"/><use href="#y" x="590" y="280"/>
+      <text x="96" y="329">Raise &amp; list tickets</text><use href="#o" x="470" y="324"/><use href="#y" x="590" y="324"/>
+      <text x="96" y="373">Read performance reviews</text><use href="#o" x="470" y="368"/><use href="#y" x="590" y="368"/>
+      <text x="96" y="417">Policies, directory, who's out</text><use href="#y" x="470" y="412"/><use href="#y" x="590" y="412"/>
+
+      <text x="676" y="241">Approve / reject leave</text><use href="#n" x="1050" y="236"/><use href="#y" x="1170" y="236"/>
+      <text x="676" y="285">Onboard employees</text><use href="#n" x="1050" y="280"/><use href="#y" x="1170" y="280"/>
+      <text x="676" y="329">Update ticket status</text><use href="#n" x="1050" y="324"/><use href="#y" x="1170" y="324"/>
+      <text x="676" y="373">Interviews &amp; writing reviews</text><use href="#n" x="1050" y="368"/><use href="#y" x="1170" y="368"/>
+      <text x="676" y="417">Analytics &amp; audit log</text><use href="#n" x="1050" y="412"/><use href="#y" x="1170" y="412"/>
+    </g>
+    <g font-size="13.5" fill="#5B605D" transform="translate(64 500)">
+      <use href="#y" x="11" y="-5"/><text x="30">allowed</text>
+      <use href="#o" x="122" y="-5"/><text x="152">own records only</text>
+      <use href="#n" x="293" y="-5"/><text x="312">not offered, and refused if called</text>
+      <text x="1152" text-anchor="end">Nobody can approve their own leave or review themselves.</text>
+    </g>
+  </g>
+</svg>

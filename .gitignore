@@ -48,3 +48,6 @@ htmlcov/
 
 # UV
 .python-version
+# Local tooling
+.claude/
+data/

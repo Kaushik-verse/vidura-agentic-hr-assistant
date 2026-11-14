@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" width="1280" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Leave request lifecycle</title>
+  <desc id="d">A leave request passes date validation, overlap, balance and team-coverage checks, then waits for an HR decision.</desc>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8B908C"/></marker></defs>
+  <rect width="1280" height="400" rx="22" fill="#F6F5F1"/>
+  <g font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+    <text x="64" y="62" font-size="13" font-weight="700" fill="#8A4F22" letter-spacing="1.6">LEAVE LIFECYCLE</text>
+    <text x="64" y="96" font-family="Georgia,serif" font-size="30" fill="#1B1D1C">Every request is checked before anyone sees it</text>
+
+    <g font-size="13.5">
+      <!-- step template: rect 168x150 -->
+      <g transform="translate(64 140)">
+        <rect width="168" height="150" rx="14" fill="#FFF" stroke="#E0DED6"/>
+        <circle cx="30" cy="32" r="16" fill="#2F5D50"/><text x="30" y="37" text-anchor="middle" fill="#FFF" font-weight="700">1</text>
+        <text x="18" y="76" font-size="16" font-weight="700" fill="#1B1D1C">Request</text>
+        <text x="18" y="100" fill="#5B605D">chat, form or MCP</text>
+        <text x="18" y="120" fill="#5B605D">annual · sick · unpaid</text>
+      </g>
+      <g transform="translate(264 140)">
+        <rect width="168" height="150" rx="14" fill="#FFF" stroke="#E0DED6"/>
+        <circle cx="30" cy="32" r="16" fill="#2F5D50"/><text x="30" y="37" text-anchor="middle" fill="#FFF" font-weight="700">2</text>
+        <text x="18" y="76" font-size="16" font-weight="700" fill="#1B1D1C">Valid dates</text>
+        <text x="18" y="100" fill="#5B605D">future, weekday start</text>
+        <text x="18" y="120" fill="#5B605D">1–30 working days</text>
+      </g>
+      <g transform="translate(464 140)">
+        <rect width="168" height="150" rx="14" fill="#FFF" stroke="#E0DED6"/>
+        <circle cx="30" cy="32" r="16" fill="#2F5D50"/><text x="30" y="37" text-anchor="middle" fill="#FFF" font-weight="700">3</text>
+        <text x="18" y="76" font-size="16" font-weight="700" fill="#1B1D1C">No overlap</text>
+        <text x="18" y="100" fill="#5B605D">with your pending or</text>
+        <text x="18" y="120" fill="#5B605D">approved leave</text>
+      </g>
+      <g transform="translate(664 140)">
+        <rect width="168" height="150" rx="14" fill="#FFF" stroke="#E0DED6"/>
+        <circle cx="30" cy="32" r="16" fill="#2F5D50"/><text x="30" y="37" text-anchor="middle" fill="#FFF" font-weight="700">4</text>
+        <text x="18" y="76" font-size="16" font-weight="700" fill="#1B1D1C">Balance</text>
+        <text x="18" y="100" fill="#5B605D">20 annual days/year,</text>
+        <text x="18" y="120" fill="#5B605D">pending ones reserved</text>
+      </g>
+      <g transform="translate(864 140)">
+        <rect width="168" height="150" rx="14" fill="#FBF3EC" stroke="#E7CBB3"/>
+        <circle cx="30" cy="32" r="16" fill="#B0703C"/><text x="30" y="37" text-anchor="middle" fill="#FFF" font-weight="700">!</text>
+        <text x="18" y="76" font-size="16" font-weight="700" fill="#1B1D1C">Team coverage</text>
+        <text x="18" y="100" fill="#6E5440">warns if 2+ teammates</text>
+        <text x="18" y="120" fill="#6E5440">are already off</text>
+      </g>
+      <g transform="translate(1064 140)">
+        <rect width="152" height="150" rx="14" fill="#2F5D50"/>
+        <text x="18" y="44" font-size="12" font-weight="700" fill="#BFD6CD" letter-spacing="1.2">HR DECIDES</text>
+        <text x="18" y="76" font-size="16" font-weight="700" fill="#FFF">Approve / Reject</text>
+        <text x="18" y="100" fill="#DCEAE4">never your own</text>
+        <text x="18" y="120" fill="#DCEAE4">request</text>
+      </g>
+    </g>
+    <g stroke="#8B908C" stroke-width="1.6" marker-end="url(#a)"><path d="M234 215H260"/><path d="M434 215H460"/><path d="M634 215H660"/><path d="M834 215H860"/><path d="M1034 215H1060"/></g>
+    <text x="64" y="340" font-size="14" fill="#5B605D">Employees can cancel future leave · weekends are skipped automatically · every decision lands in the audit log</text>
+  </g>
+</svg>
