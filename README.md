@@ -9,6 +9,8 @@ Ask in plain language: it validates the request, checks your role, and acts.
 
 <br/>
 
+[![Live demo](https://img.shields.io/badge/▶%20live%20demo-try%20it-2F5D50?style=for-the-badge)](https://vidura.streamlit.app/)
+
 ![Python](https://img.shields.io/badge/Python-3.11%2B-2F5D50?style=flat-square&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.57-2F5D50?style=flat-square&logo=streamlit&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-agent-2F5D50?style=flat-square&logo=langchain&logoColor=white)
@@ -18,7 +20,7 @@ Ask in plain language: it validates the request, checks your role, and acts.
 [![CI](https://img.shields.io/github/actions/workflow/status/Kaushik-verse/vidura-agentic-hr-assistant/ci.yml?branch=main&style=flat-square&label=CI&color=2F5D50)](https://github.com/Kaushik-verse/vidura-agentic-hr-assistant/actions/workflows/ci.yml)
 ![License](https://img.shields.io/badge/license-all%20rights%20reserved-5B605D?style=flat-square)
 
-[Features](#-what-it-does) · [Screenshots](#-screenshots) · [Architecture](#-architecture) · [Run it](#-run-it-locally) · [MCP](#-use-it-from-any-mcp-client) · [Tests](#-quality)
+[**Live demo**](https://vidura.streamlit.app/) · [Features](#-what-it-does) · [Screenshots](#-screenshots) · [Architecture](#-architecture) · [Run it](#-run-it-locally) · [MCP](#-use-it-from-any-mcp-client) · [Tests](#-quality)
 
 </div>
 
@@ -106,6 +108,8 @@ Every name is drawn from Indian mythology:
 ## ✦ Run it locally
 
 > Running the code is permitted only for evaluating the author's work. See [License](#-license).
+
+No setup needed to try it: the [live demo](https://vidura.streamlit.app/) runs the same app with the sample company (data resets when the app restarts).
 
 Requires Python 3.11+ and a free [Groq API key](https://console.groq.com/keys). [uv](https://docs.astral.sh/uv/) is recommended.
 
